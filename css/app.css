@@ -633,6 +633,7 @@ header .container .main-nav > li > a:hover::before {
   line-height: 1.6;
   font-size: 18px;
   max-width: 500px;
+  margin-bottom: 60px;
 }
 .discount .image .content img {
   width: 300px;

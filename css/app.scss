@@ -585,6 +585,7 @@ header {
     position: relative;
     z-index: 1;
     animation: change-background 5s linear infinite;
+
     &::before {
       content: "";
       position: absolute;
@@ -606,6 +607,7 @@ header {
         line-height: 1.6;
         font-size: 18px;
         max-width: 500px;
+        margin-bottom: 60px;
       }
       img {
         width: 300px;
