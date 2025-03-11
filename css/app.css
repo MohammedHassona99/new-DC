@@ -234,18 +234,21 @@ header .container .main-nav > li > a:hover::before {
   height: 100%;
   background-color: #ececec;
   z-index: -1;
-  transform: skewY(-6deg);
-  transform-origin: top left;
 }
 .landing .container {
   min-height: calc(100vh - 72px);
+  padding: 0 !important;
+  margin: 0;
+  width: 100%;
   display: flex;
+  justify-content: center;
   align-items: center;
   padding-bottom: 120px;
 }
 @media (max-width: 991px) {
   .landing .container {
     flex-direction: column;
+    padding-right: 15px;
   }
 }
 @media (max-width: 767px) {
@@ -255,6 +258,9 @@ header .container .main-nav > li > a:hover::before {
 }
 .landing .container .text {
   flex: 1;
+  flex-basis: 50%;
+  padding-left: 35px;
+  margin: 0 auto;
 }
 .landing .container .text h1 {
   font-size: 40px;
@@ -293,17 +299,14 @@ header .container .main-nav > li > a:hover::before {
   .landing .container .text {
     flex: none;
     margin-bottom: 35px;
+    padding: 0 15px;
   }
+}
+.landing .container .image {
+  flex-basis: 50%;
 }
 .landing .container .image img {
-  position: relative;
-  width: 350px;
-  animation: up-to-down 5s linear infinite;
-}
-@media (max-width: 767px) {
-  .landing .container .image img {
-    width: 150px;
-  }
+  max-width: 100%;
 }
 .landing .go-down {
   position: absolute;
@@ -632,7 +635,6 @@ header .container .main-nav > li > a:hover::before {
 .discount .image .content p {
   line-height: 1.6;
   font-size: 18px;
-  max-width: 500px;
   margin-bottom: 60px;
 }
 .discount .image .content img {
